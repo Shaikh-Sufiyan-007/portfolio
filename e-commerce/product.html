@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportPro | Performance Running Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- Product Section -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-badge">SALE</span>
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" alt="Velocity Runner Pro Shoes">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="product-details">
+                    <h1 class="product-title">Velocity Runner Pro</h1>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="ms-2 text-muted">(128 reviews)</span>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-4">Experience unparalleled speed and comfort with our premium running shoes designed for athletes who demand peak performance.</p>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="product-price">$129.99</span>
+                        <span class="product-old-price ms-2">$159.99</span>
+                        <span class="product-discount">20% OFF</span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Select Size</h5>
+                        <div class="size-options d-flex">
+                            <button class="btn btn-size">6</button>
+                            <button class="btn btn-size">7</button>
+                            <button class="btn btn-size active">8</button>
+                            <button class="btn btn-size">9</button>
+                            <button class="btn btn-size">10</button>
+                            <button class="btn btn-size">11</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Quantity</h5>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" id="decrease-qty">-</button>
+                            <input type="text" class="quantity-input" value="1" id="quantity">
+                            <button class="quantity-btn" id="increase-qty">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap product-actions mb-4">
+                        <button class="btn btn-primary me-3 mb-2" id="add-to-cart">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                        <button class="btn btn-outline-secondary mb-2">
+                            <i class="fas fa-heart me-2"></i>Add to Wishlist
+                        </button>
+                    </div>
+                    
+                    <div class="product-highlights mb-4">
+                        <h5 class="fw-bold mb-3">Product Highlights</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lightweight responsive cushioning for explosive speed</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Breathable mesh upper for maximum ventilation</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Durable rubber outsole with multi-directional traction</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Moisture-wicking interior lining keeps feet dry</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reinforced heel counter for stability and support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Details Tabs -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs">Specifications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews">Reviews (128)</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-4 border border-top-0" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description">
+                        <p>The Velocity Runner Pro is engineered for runners who demand both speed and comfort. Featuring our revolutionary AeroFoam™ midsole, these shoes provide exceptional energy return with every stride.</p>
+                        <p>Constructed with a lightweight, breathable mesh upper, the Velocity Runner Pro keeps your feet cool and comfortable even during intense workouts. The precision-engineered rubber outsole offers superior traction on both roads and tracks.</p>
+                        <p>Whether you're training for a marathon or just starting your running journey, the Velocity Runner Pro will help you reach your personal best.</p>
+                    </div>
+                    <div class="tab-pane fade" id="specs">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Weight:</span>
+                                        <span>240g (per shoe)</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Drop:</span>
+                                        <span>8mm</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Upper Material:</span>
+                                        <span>Engineered Mesh</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Midsole:</span>
+                                        <span>AeroFoam™ Technology</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Outsole:</span>
+                                        <span>High-Abrasion Rubber</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Best For:</span>
+                                        <span>Road Running, Training</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="review-card">
+                                    <div class="reviewer mb-2">Michael Johnson</div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-muted ms-2">2 days ago</span>
+                                    </div>
+                                    <p class="mb-0">These shoes are amazing! I've shaved 30 seconds off my mile time since I started using them. The cushioning is perfect for long runs.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="review-card">
+                                    <div class="reviewer mb-2">Sarah Thompson</div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="text-muted ms-2">1 week ago</span>
+                                    </div>
+                                    <p class="mb-0">Great balance of comfort and responsiveness. The breathable upper keeps my feet cool even on hot days. Highly recommended!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary">Load More Reviews</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Featured Products -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="section-title">You May Also Like</h3>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" class="card-img-top" alt="Training Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Training Master</h5>
+                        <p class="card-text text-primary fw-bold">$99.99</p>
+                        <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" class="card-img-top" alt="Trail Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Trail Explorer</h5>
+                        <p class="card-text text-primary fw-bold">$119.99</p>
+                        <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" class="card-img-top" alt="Basketball Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Court Dominator</h5>
+                        <p class="card-text text-primary fw-bold">$139.99</p>
+                        <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" class="card-img-top" alt="Walking Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Comfort Walker</h5>
+                        <p class="card-text text-primary fw-bold">$89.99</p>
+                        <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <div>
+            <strong>Item added to cart!</strong>
+            <div>Velocity Runner Pro (Size 8)</div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="mb-4">SPORTZONE</h4>
+                    <p>Your premier destination for high-quality sports equipment, apparel, and accessories from top brands worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Categories</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Sale</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-4">Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Shipping Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Returns & Exchanges</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get special offers, free giveaways, and new product alerts.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Your Email">
+                        <button class="btn btn-newsletter" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <p class="text-white-50">&copy; 2025 SportZone. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 mb-3 text-md-end">
+                    <img src="https://via.placeholder.com/40x25/fff?text=MC" alt="MasterCard" class="me-2">
+                    <img src="https://via.placeholder.com/40x25/fff?text=VISA" alt="Visa" class="me-2">
+                    <img src="https://via.placeholder.com/40x25/fff?text=PP" alt="PayPal" class="me-2">
+                    <img src="https://via.placeholder.com/40x25/fff?text=AMEX" alt="Amex">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Quantity Selector
+        document.getElementById('increase-qty').addEventListener('click', function() {
+            let quantityInput = document.getElementById('quantity');
+            let currentQty = parseInt(quantityInput.value);
+            quantityInput.value = currentQty + 1;
+        });
+        
+        document.getElementById('decrease-qty').addEventListener('click', function() {
+            let quantityInput = document.getElementById('quantity');
+            let currentQty = parseInt(quantityInput.value);
+            if (currentQty > 1) {
+                quantityInput.value = currentQty - 1;
+            }
+        });
+        
+        // Size Selection
+        const sizeButtons = document.querySelectorAll('.btn-size');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                sizeButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Add to Cart Functionality
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            const selectedSize = document.querySelector('.btn-size.active').textContent;
+            const quantity = document.getElementById('quantity').value;
+            
+            // Show notification
+            const notification = document.getElementById('cart-notification');
+            notification.classList.add('show');
+            
+            // Update notification text
+            notification.querySelector('div div').textContent = 
+                `Velocity Runner Pro (Size ${selectedSize}) x${quantity}`;
+            
+            // Hide notification after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+            
+            // Update cart count
+            const cartCount = document.querySelector('.badge');
+            let currentCount = parseInt(cartCount.textContent);
+            cartCount.textContent = currentCount + parseInt(quantity);
+        });
+        
+
+
+    </script>
+</body>
+</html>
